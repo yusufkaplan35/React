@@ -29,6 +29,9 @@ import Stateless from "./components/13-usestate/stateless";
 import Counter1 from "./components/14-counter/counter1";
 import Counter2 from "./components/14-counter/counter2";
 import UserList from "./components/15-birthday/user-list";
+import UseEffect1 from "./components/16-useeffect/useeffect1";
+import UseEffect2 from "./components/16-useeffect/useeffect2";
+import UseEffect3 from "./components/16-useeffect/useeffect3";
 
 const App = () =>{
   return <div>
@@ -63,10 +66,16 @@ const App = () =>{
        <State/>
        <Counter1/>
        <Counter2/>
+       <UserList/>
+        <UseEffect1/>
+        <UseEffect2/>
+        <UseEffect3/>
+        
 */}
 
+
+      <CountryFilter/>
    
-     <UserList/>
       
     
     
