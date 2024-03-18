@@ -32,6 +32,10 @@ import UserList from "./components/15-birthday/user-list";
 import UseEffect1 from "./components/16-useeffect/useeffect1";
 import UseEffect2 from "./components/16-useeffect/useeffect2";
 import UseEffect3 from "./components/16-useeffect/useeffect3";
+import UseRef from "./components/19-useref/useref";
+import ClassComp from "./components/20-class-comp/class-comp";
+import Users from "./components/21-api-users/users";
+import Countries from "./components/22-countries/countries";
 
 const App = () =>{
   return <div>
@@ -70,15 +74,15 @@ const App = () =>{
         <UseEffect1/>
         <UseEffect2/>
         <UseEffect3/>
-        
+        <CountryFilter/>
+        <UseRef/> 
+        <ClassComp/> 
+        <Users/> 
 */}
 
+     <Countries/>    
+    
 
-      <CountryFilter/>
-   
-      
-    
-    
     </div>;
 };
 

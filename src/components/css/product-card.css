@@ -1,0 +1,14 @@
+.product-card {
+  border: 1px solid gray;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.product-card h3 {
+  text-align: center;
+  font-size: 1.3rem;
+}/*# sourceMappingURL=product-card.css.map */
