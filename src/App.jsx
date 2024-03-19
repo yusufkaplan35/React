@@ -36,6 +36,11 @@ import UseRef from "./components/19-useref/useref";
 import ClassComp from "./components/20-class-comp/class-comp";
 import Users from "./components/21-api-users/users";
 import Countries from "./components/22-countries/countries";
+import Parent from "./components/23-child-parent/parent";
+import Form1 from "./components/24-forms/form1";
+import Form2 from "./components/24-forms/form2";
+import Form3 from "./components/24-forms/form3";
+import Form4 from "./components/24-forms/form4";
 
 const App = () =>{
   return <div>
@@ -78,9 +83,14 @@ const App = () =>{
         <UseRef/> 
         <ClassComp/> 
         <Users/> 
+        <Countries/>  
+        <Parent/>
+        <Form1/>
+        <Form2/>
+        <Form3/>
 */}
 
-     <Countries/>    
+       <Form4/>
     
 
     </div>;

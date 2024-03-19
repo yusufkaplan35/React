@@ -2,10 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Container, Image, Table } from "react-bootstrap";
 const API_URL = "https://restcountries.com/v3.1/all";
-
-
 const Countries = () => {
-
     const [countries, setCountries] = useState([]);
     useEffect(() => {
         const loadData = async () => {
@@ -50,7 +47,7 @@ const Countries = () => {
                                 ).join("-")}
                             </td>
                         </tr>
-                    ))
+                    ))}
                 </tbody>
             </Table>
         </Container>
