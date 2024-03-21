@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Button, Container, Form } from "react-bootstrap";
-const Form4 = () => {
+const Form5 = () => {
     // Form bilgileri genelde tek bir state icinde saklanir.
     const [formData, setFormData] = useState({
         firstName: "",
@@ -19,9 +19,20 @@ const Form4 = () => {
         // Formun default submit davranisi devre disi birakildi
         e.preventDefault();
         // Form validation yapilir
-        // formData API a gonderilir
-        console.table(formData);
-        alert("Registration is completed");
+        const { firstName, lastName, email } = formData;
+        try {
+            if (!firstName || firstName.length < 2)
+                throw new Error("Enter your firstname");
+            if (!lastName) throw new Error("Enter your lastname");
+            if (!email) throw new Error("Enter your email");
+            const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
+            if (!emailRegex.test(email)) throw new Error("Invalid email");
+            // formData API a gonderilir
+            console.table(formData);
+            alert("Registration is completed");
+        } catch (err) {
+            alert(err.message);
+        }
     };
     console.table(formData);
     return (
@@ -112,4 +123,4 @@ const Form4 = () => {
         </Container>
     );
 };
-export default Form4;
+export default Form5;
